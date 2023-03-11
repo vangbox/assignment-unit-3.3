@@ -41,17 +41,22 @@ console.log(supplyChanges);
 console.log('6. Showing supplyChanges...');
 
 
-//for(let i=0; i < supplyChanges.length; i++ ){
-//   console.log("Added x parts", supplyChanges);
-//}
-
-for(let i=0; i === supplyChanges.length; i++ ){
-    console.log("No Change");
+for(let i = 0; i < supplyChanges.length; i++){
+    console.log("x");
+    if (i > 0) {
+        console.log("Added x parts.");
+        i++;
+    }
+        if (i === 0) {
+            console.log("No Change");
+            i++;
+        }
+            if (i < 0) {
+                console.log("Removed x parts.");
+                i++;
+            }
 }
 
-for(let i=0; i > supplyChanges.length; i++ ){
-    console.log("Removed x parts");
-}
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
