@@ -44,14 +44,14 @@ for(let i = 0; i < supplyChanges.length; i++){
     console.log("N/A");
 
     if(supplyChanges[i] > 0){
-        console.log("Added x parts.");
+        console.log("Added", i, "parts.");
         i++;
     }
         if(supplyChanges[i] === 0){
             console.log("No Change");
         }
             if(supplyChanges[i] < 0){
-                console.log("Removed x parts.");
+                console.log("Removed", i, "parts.");
             }
 }
     
